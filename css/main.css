@@ -27,11 +27,20 @@ h1 {
 }
 
 .navbar {
-  text-transform: uppercase;
-  font-weight: 400;;
-  padding: 0 50px;
   background-color: #fff !important;
+  font-weight: 400;
+  padding: 0 50px;
   text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 10;
+}
+.navbar-nav .nav-item:hover {
+  color: #666 !important;
+}
+.navbar-nav .nav-item.active {
+  border-bottom: 2px solid #666;
+  color: #555 !important;
 }
 
 .icon-bar {
@@ -82,6 +91,7 @@ h1 {
 .navbar-brand img {
   height: 7.5rem;
   opacity: 0.9;
+  padding: 10px;
 }
 
 .navbar-brand img:hover {
@@ -176,7 +186,7 @@ h1 {
 #images-container {
   width: 80%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -190,7 +200,7 @@ h1 {
 
 #images-container .column-1 .img:hover, #images-container .column-2 .img:hover {
   box-shadow: 2px 2px 6px 0 #000;
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 /* My Work Images and Load More */
@@ -290,7 +300,7 @@ footer img {
 
 #footer-container a {
   text-decoration: none;
-  color: #aaa;
+  color: #ddd;
   font-size: 0.9rem;
 }
 
@@ -310,12 +320,12 @@ footer hr {
 
 #author {
   padding: 20px;
-  color: #666;
+  color: #777;
   font-size: 0.8rem;
 }
 
 #author a {
-  color: #aaa;
+  color: #888;
 }
 
 /* FOOTER END */
@@ -323,6 +333,22 @@ footer hr {
 @media(max-width: 1180px) {
   #video-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 991px) {
+  .navbar {
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.4);
+    position: fixed;
+  }
+  #images-container {
+    margin-top: 150px;
+  }
+  #information {
+    margin-top: 130px;
+  }
+  .navbar-nav .nav-item.active {
+    border: none;
   }
 }
 
