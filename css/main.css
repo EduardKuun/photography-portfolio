@@ -350,6 +350,9 @@ footer hr {
   .navbar-nav .nav-item.active {
     border: none;
   }
+  .navbar-nav {
+    padding: 2px 0 16px 0;
+  }
 }
 
 @media(max-width: 880px) {
@@ -370,9 +373,6 @@ footer hr {
 @media(max-width: 680px) {
   .navbar {
     padding: 0 5px;
-  }
-  .navbar-nav {
-    padding: 0 10px;
   }
   .navbar-brand img {
     height: 6rem;
